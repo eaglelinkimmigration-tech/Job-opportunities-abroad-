@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Luxembourg Job Application</title>
+
+<style>
+body{
+font-family:Arial,sans-serif;
+background:#f4f4f4;
+margin:0;
+padding:20px;
+}
+
+.container{
+max-width:800px;
+margin:auto;
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.2);
+}
+
+h1{
+text-align:center;
+color:#C8102E;
+}
+
+label{
+display:block;
+margin-top:15px;
+font-weight:bold;
+}
+
+input,select,textarea{
+width:100%;
+padding:10px;
+margin-top:5px;
+border:1px solid #ccc;
+border-radius:5px;
+box-sizing:border-box;
+}
+
+textarea{
+height:120px;
+}
+
+button{
+margin-top:20px;
+width:100%;
+padding:15px;
+background:#003399;
+color:white;
+border:none;
+border-radius:5px;
+font-size:18px;
+cursor:pointer;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Luxembourg Job Application</h1>
+
+<form onsubmit="sendEmail();return false;">
+
+<label>Full Name</label>
+<input type="text" id="name" required>
+
+<label>Date of Birth</label>
+<input type="date" id="dob">
+
+<label>Gender</label>
+<select id="gender">
+<option>Male</option>
+<option>Female</option>
+<option>Prefer not to say</option>
+</select>
+
+<label>Nationality</label>
+<input type="text" id="nation">
+
+<label>Passport Number</label>
+<input type="text" id="passport">
+
+<label>Phone Number</label>
+<input type="tel" id="phone">
+
+<label>WhatsApp Number</label>
+<input type="tel" id="whatsapp">
+
+<label>Email Address</label>
+<input type="email" id="email">
+
+<label>Preferred Job</label>
+<select id="job">
+<option>Delivery Driver</option>
+<option>Warehouse Assistant</option>
+<option>Construction Worker</option>
+<option>Factory Worker</option>
+<option>Cleaner</option>
+<option>Caregiver</option>
+<option>Security Guard</option>
+</select>
+
+<label>Upload CV</label>
+<input type="file">
+
+<label>Upload Passport</label>
+<input type="file">
+
+<label>Upload Certificates</label>
+<input type="file">
+
+<label>Additional Information</label>
+<textarea id="message"></textarea>
+
+<button type="submit">Send via Email</button>
+
+</form>
+
+</div>
+
+<script>
+
+function sendEmail(){
+
+var body=
+"Full Name: "+document.getElementById("name").value+"\n"+
+"Date of Birth: "+document.getElementById("dob").value+"\n"+
+"Gender: "+document.getElementById("gender").value+"\n"+
+"Nationality: "+document.getElementById("nation").value+"\n"+
+"Passport Number: "+document.getElementById("passport").value+"\n"+
+"Phone: "+document.getElementById("phone").value+"\n"+
+"WhatsApp: "+document.getElementById("whatsapp").value+"\n"+
+"Email: "+document.getElementById("email").value+"\n"+
+"Preferred Job: "+document.getElementById("job").value+"\n"+
+"Additional Information: "+document.getElementById("message").value;
+
+window.location.href=
+"mailto:eaglelinkimmigration@gmail.com?subject=Luxembourg Job Application&body="+encodeURIComponent(body);
+
+}
+
+</script>
+
+</body>
+  </html>
