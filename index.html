@@ -3,304 +3,200 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Luxembourg Job Application</title>
+<title>World Wise Immigration</title>
 
-<style>
-body{
-font-family:Arial,sans-serif;
-background:#f4f4f4;
-margin:0;
-padding:20px;
-}
-
-.container{
-max-width:800px;
-margin:auto;
-background:white;
-padding:25px;
-border-radius:10px;
-box-shadow:0 0 10px rgba(0,0,0,0.2);
-}
-
-h1{
-text-align:center;
-color:#C8102E;
-}
-
-label{
-display:block;
-margin-top:15px;
-font-weight:bold;
-}
-
-input,select,textarea{
-width:100%;
-padding:10px;
-margin-top:5px;
-border:1px solid #ccc;
-border-radius:5px;
-box-sizing:border-box;
-}
-
-textarea{
-height:120px;
-}
-
-button{
-margin-top:20px;
-width:100%;
-padding:15px;
-background:#003399;
-color:white;
-border:none;
-border-radius:5px;
-font-size:18px;
-cursor:pointer;
-}
-</style>
-
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<div class="container">
+<header>
 
-<h1>Luxembourg Job Application</h1>
+<h1>WORLD WISE IMMIGRATION</h1>
 
-<form onsubmit="sendEmail();return false;">
+<p>Your Trusted International Recruitment Partner</p>
 
-<label>Full Name</label>
-<input type="text" id="name" required>
+<nav>
 
-<label>Date of Birth</label>
-<input type="date" id="dob">
+<a href="#home">Home</a>
 
-<label>Gender</label>
-<select id="gender">
-<option>Male</option>
-<option>Female</option>
-<option>Prefer not to say</option>
-</select>
+<a href="#about">About</a>
 
-<label>Nationality</label>
-<input type="text" id="nation">
+<a href="#jobs">Jobs</a>
 
-<label>Passport Number</label>
-<input type="text" id="passport">
+<a href="#apply">Apply</a>
 
-<label>Phone Number</label>
-<input type="tel" id="phone">
+<a href="#contact">Contact</a>
 
-<label>WhatsApp Number</label>
-<input type="tel" id="whatsapp">
+</nav>
 
-<label>Email Address</label>
-<input type="email" id="email">
+</header>
 
-<label>Preferred Job</label>
-<select id="job">
-<option>Delivery Driver</option>
-<option>Warehouse Assistant</option>
-<option>Construction Worker</option>
-<option>Factory Worker</option>
-<option>Cleaner</option>
-<option>Caregiver</option>
-<option>Security Guard</option>
-</select>
+<section id="home">
 
-<label>Upload CV</label>
-<input type="file">
+<h2>Welcome</h2>
 
-<label>Upload Passport</label>
-<input type="file">
+<p>
 
-<label>Upload Certificates</label>
-<input type="file">
+World Wise Immigration helps qualified candidates find employment opportunities in different countries. We connect job seekers with employers and assist throughout the recruitment process.
 
-<label>Additional Information</label>
-<textarea id="message"></textarea>
+</p>
 
-<button type="submit">Send via Email</button>
+<a href="#jobs" class="button">View Jobs</a>
 
-</form>
+</section>
 
-</div>
+<section id="about">
 
-<script>
+<h2>About Us</h2>
 
-function sendEmail(){
+<p>
 
-var body=
-"Full Name: "+document.getElementById("name").value+"\n"+
-"Date of Birth: "+document.getElementById("dob").value+"\n"+
-"Gender: "+document.getElementById("gender").value+"\n"+
-"Nationality: "+document.getElementById("nation").value+"\n"+
-"Passport Number: "+document.getElementById("passport").value+"\n"+
-"Phone: "+document.getElementById("phone").value+"\n"+
-"WhatsApp: "+document.getElementById("whatsapp").value+"\n"+
-"Email: "+document.getElementById("email").value+"\n"+
-"Preferred Job: "+document.getElementById("job").value+"\n"+
-"Additional Information: "+document.getElementById("message").value;
+World Wise Immigration is committed to helping people secure international employment opportunities. We provide information about available jobs and assist applicants through the recruitment process.
 
-window.location.href=
-"mailto:eaglelinkimmigration@gmail.com?subject=Luxembourg Job Application&body="+encodeURIComponent(body);
+</p>
 
+<h3>Contact Information</h3>
+
+<p>
+
+<b/* ===========================
+   WORLD WISE IMMIGRATION
+   style.css
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
-</script>
+body{
+    background:#f4f7fb;
+    color:#333;
+    line-height:1.6;
+}
 
-</body>
-  </html>
-<div class="card">
-<h3>Delivery Driver</h3>
-<p>Deliver goods safely while following Luxembourg traffic regulations.</p>
-</div>
+/* Header */
 
-<div class="card">
-<h3>Truck Driver</h3>
-<p>Transport goods across regional and international routes.</p>
-</div>
+header{
+    background:#003366;
+    color:#fff;
+    text-align:center;
+    padding:25px;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
 
-<div class="card">
-<h3>Warehouse Assistant</h3>
-<p>Receive, organize and dispatch stock efficiently.</p>
-</div>
+header h1{
+    font-size:34px;
+    margin-bottom:8px;
+}
 
-<div class="card">
-<h3>Forklift Operator</h3>
-<p>Operate forklifts safely in warehouses and logistics centres.</p>
-</div>
+header p{
+    font-size:18px;
+}
 
-<div class="card">
-<h3>Factory Worker</h3>
-<p>Support production lines and packaging operations.</p>
-</div>
+nav{
+    margin-top:20px;
+}
 
-<div class="card">
-<h3>Construction Worker</h3>
-<p>Assist with construction and infrastructure projects.</p>
-</div>
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:8px;
+    font-weight:bold;
+    transition:.3s;
+}
 
-<div class="card">
-<h3>Electrician</h3>
-<p>Install and maintain electrical systems.</p>
-</div>
+nav a:hover{
+    color:#ffd700;
+}
 
-<div class="card">
-<h3<section>
+/* Sections */
 
-<h2>Why Choose EagleLink Immigration?</h2>
+section{
+    padding:60px 10%;
+}
 
-<div class="cards">
+section h2{
+    color:#003366;
+    margin-bottom:20px;
+    text-align:center;
+    font-size:32px;
+}
 
-<div class="card">
-<h3>Professional Platform</h3>
-<p>Simple and user-friendly online application process.</p>
-</div>
+/* Home */
 
-<div class="card">
-<h3>Multiple Job Categories</h3>
-<p>Browse opportunities in logistics, construction, hospitality, healthcare, administration and more.</p>
-</div>
+#home{
+    text-align:center;
+}
 
-<div class="card">
-<h3>Easy Online Application</h3>
-<p>Complete your application from your phone, tablet or computer.</p>
-</div>
+#home p{
+    max-width:800px;
+    margin:auto;
+    font-size:18px;
+}
 
-<div class="card">
-<h3>Mobile Friendly</h3>
-<p>Our website is designed to work well on mobile devices.</p>
-</div>
+.button{
+    display:inline-block;
+    margin-top:25px;
+    background:#003366;
+    color:white;
+    padding:14px 28px;
+    text-decoration:none;
+    border-radius:6px;
+    font-weight:bold;
+}
 
-<div class="card">
-<h3>Document Upload</h3>
-<p>Submit your CV and supporting documents through the application page.</p>
-</div>
+.button:hover{
+    background:#0055aa;
+}
 
-<div class="card">
-<h3>Professional Support</h3>
-<p>Contact us if you have general questions about the application process.</p>
-</div>
+/* About// ===========================
+// WORLD WISE IMMIGRATION
+// script.js
+// ===========================
 
-</div>
+document.getElementById("applicationForm").addEventListener("submit", function (e) {
+    e.preventDefault();
 
-</section>
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const phone = document.getElementById("phone").value;
+    const nationality = document.getElementById("nationality").value;
+    const passport = document.getElementById("passport").value;
+    const dob = document.getElementById("dob").value;
+    const gender = document.getElementById("gender").value;
+    const address = document.getElementById("address").value;
+    const education = document.getElementById("education").value;
+    const experience = document.getElementById("experience").value;
+    const job = document.getElementById("job").value;
+    const comments = document.getElementById("comments").value;
 
-<section>
+    const message =
+`🌍 *WORLD WISE IMMIGRATION*
+*JOB APPLICATION*
 
-<h2>Frequently Asked Questions</h2>
+*Full Name:* ${name}
+*Email:* ${email}
+*Phone Number:* ${phone}
+*Nationality:* ${nationality}
+*Passport Number:* ${passport}
+*Date of Birth:* ${dob}
+*Gender:* ${gender}
+*Address:* ${address}
+*Highest Education:* ${education}
+*Position Applied For:* ${job}
+*Work Experience:* ${experience}
+*Additional Comments:* ${comments}
 
-<h3>Who can apply?</h3>
+Thank you for applying with World Wise Immigration.`;
 
-<p>
-Anyone who meets the requirements for a particular position may submit an application.
-</p>
+    const whatsapp = "254789748181";
+    const url = `https://wa.me/${whatsapp}?text=${encodeURIComponent(message)}`;
 
-<br>
-
-<h3>Can I apply for more than one job?</h3>
-
-<p>
-Yes. You may submit applications for different positions if you meet the listed requirements.
-</p>
-
-<br>
-
-<h3>Does submitting an application guarantee employment?</h3>
-
-<p>
-No. Applications are reviewed according to the employer's recruitment process, and hiring decisions are made by the employer.
-</p>
-
-</section>
-
-<section id="contact">
-
-<h2>Contact Us</h2>
-
-<p><strong>Email:</strong> eaglelinkimmigration@gmail.com</p>
-
-<p>
-For general enquiries about the application process, please contact us by email.
-</p>
-
-</section>
-
-<footer style="background:#003399;color:white;text-align:center;padding:30px;margin-top:40px;">
-
-<h3>EagleLink Immigration</h3>
-
-<p>Employment Opportunities in Luxembourg</p>
-
-<br>
-
-<p>
-
-Home |
-About |
-Jobs |
-Apply |
-Contact
-
-</p>
-
-<br>
-
-<p>
-
-© 2026 EagleLink Immigration. All Rights Reserved.
-
-</p>
-
-<p style="margin-top:15px;font-size:14px;">
-
-This website provides information about employment opportunities in Luxembourg. Employment decisions are made by employers according to their own recruitment criteria. Submitting an application does not guarantee employment or a visa.
-
-</p>
-
-</footer>
-
-</body>
-
-</html>
+    window.open(url, "_blank");
+});
