@@ -1,313 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>World Wise Immigration</title>
-
-<link rel="stylesheet" href="style.css">
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>World Wise Immigration - Jobs Abroad</title>
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{font-family:'Segoe UI', Arial, sans-serif; background:#f5f7fa; color:#333}
+    header{background:linear-gradient(135deg, #1a3c6c, #2a6bb5); color:white; padding:50px 20px; text-align:center}
+    header h1{font-size:36px; margin-bottom:10px}
+    header p{font-size:18px; opacity:0.9}
+    .container{max-width:850px; margin:30px auto; padding:20px}
+    .card{background:white; padding:30px; border-radius:15px; box-shadow:0 6px 15px rgba(0,0,0,0.1)}
+    .card h2{color:#1a3c6c; margin-bottom:10px}
+    iframe{border-radius:10px}
+    .whatsapp{margin-top:25px; text-align:center}
+    .whatsapp a{background:#25D366; color:white; padding:14px 25px; border-radius:10px; text-decoration:none; font-weight:bold; font-size:16px}
+    footer{text-align:center; padding:25px; font-size:14px; color:#777}
+  </style>
 </head>
-
 <body>
-
-<header>
-
-<div class="logo">
-
-<h1>WORLD WISE IMMIGRATION</h1>
-
-<p>Your Gateway To International Careers</p>
-
-</div>
-
-<nav>
-
-<a href="#home">Home</a>
-
-<a href="#about">About</a>
-
-<a href="#apply">Apply</a>
-
-<a href="#contact">Contact</a>
-
-</nav>
-
-</header>
-
-<section id="home" class="hero">
-
-<div class="hero-content">
-
-<h2>Find Your Dream Job Abroad</h2>
-
-<p>
-
-World Wise Immigration helps qualified candidates secure international employment opportunities. Complete one application and begin your journey toward working overseas.
-
-</p>
-
-<a href="#apply" class="apply-btn">
-
-Apply Now
-
-</a>
-
-</div>
-
-</section>
-
-<section id="about">
-
-<h2>About Us</h2>
-
-<p>
-
-World Wise Immigration is an international recruitment and immigration company dedicated to connecting job seekers with employers across different industries.
-
-We assist applicants through the recruitment process and provide information about international employment opportunities.
-
-</p>
-
-<div class="about-box">
-
-<h3>Why Choose Us?</h3>
-
-<ul>
-
-<li>Professional Recruitment Services</li>
-
-<li>International Job Opportunities</li>
-
-<li>Simple Online Application</li>
-
-<li>Reliable Customer Support</li>
-
-<li>Fast Response Through WhatsApp</li>
-
-</ul>
-
-</div>
-
-<div class="contact-info">
-
-<h3>Contact Information</h3>
-
-<p><strong>Email:</strong> eaglelinkimmigration@gmail.com</p>
-
-<p><strong>WhatsApp:</strong> +254 789 748 181</p>
-
-</div>
-
-</section>
-
-<!-- APPLY SECTION STARTS IN PART B --><!-- ==========================
-        APPLY SECTION
-========================== -->
-
-<section id="apply">
-
-<div class="form-container">
-
-<h2>Job Application Form</h2>
-
-<p>
-Fill in your details below. Select the position you want to apply for and press the
-<strong>SUBMIT</strong> button.
-</p>
-
-<form id="applicationForm">
-
-<label>Full Name *</label>
-<input type="text" id="name" placeholder="Enter your full name" required>
-
-<label>Email Address *</label>
-<input type="email" id="email" placeholder="Enter your email" required>
-
-<label>Phone Number *</label>
-<input type="tel" id="phone" placeholder="+254..." required>
-
-<label>Nationality *</label>
-<input type="text" id="nationality" placeholder="Nationality" required>
-
-<label>Passport Number *</label>
-<input type="text" id="passport" placeholder="Passport Number" required>
-
-<label>Date of Birth *</label>
-<input type="date" id="dob" required>
-
-<label>Gender *</label>
-
-<select id="gender" required>
-
-<option value="">Select Gender</option>
-
-<option>Male</option>
-
-<option>Female</option>
-
-</select>
-
-<label>Address *</label>
-<input type="text" id="address" placeholder="Current Address" required>
-
-<label>Highest Education *</label>
-
-<select id="education" required>
-
-<option value="">Select Education</option>
-
-<option>High School</option>
-
-<option>Certificate</option>
-
-<option>Diploma</option>
-
-<option>Degree</option>
-
-<option>Master's Degree</option>
-
-<option>PhD</option>
-
-</select>
-
-<label>Position Applying For *</label>
-
-<select id="job" required>
-
-<option value="">Choose Job Position</option>
-
-<option>Delivery Driver</option>
-<option>Truck Driver</option>
-<option>Forklift Operator</option>
-<option>Warehouse Assistant</option>
-<option>Factory Worker</option>
-<option>Construction Worker</option>
-<option>Security Guard</option>
-<option>Cleaner</option>
-<option>Caregiver</option>
-<option>Nurse</option>
-<option>Receptionist</option>
-<option>Hotel Housekeeper</option>
-<option>Chef</option>
-<option>Kitchen Assistant</option>
-<option>Waiter / Waitress</option>
-<option>Electrician</option>
-<option>Plumber</option>
-<option>Welder</option>
-<option>Mechanic</option>
-<option>Office Administrator</option>
-<option>Customer Service Representative</option>
-<option>Sales & Marketing Officer</option>
-<option>Accountant</option>
-<option>Cashier</option>
-<option>Farm Worker</option>
-<option>Packing Assistant</option>
-<option>Machine Operator</option>
-<option>Store Keeper</option>
-<option>CCTV Operator</option>
-<option>General Labourer</option>
-
-</select>
-
-<label>Work Experience</label>
-
-<textarea
-id="experience"
-rows="5"
-placeholder="Write your work experience here..."></textarea>
-
-<label>Additional Comments</label>
-
-<textarea
-id="comments"
-rows="5"
-placeholder="Any additional information..."></textarea>
-
-<button
-type="submit"
-class="submit-button">
-
-SUBMIT
-
-</button>
-
-</form>
-
-</div>
-
-</section>
-
-<!-- CONTACT SECTION STARTS IN PART C --><!-- ==========================
-        CONTACT SECTION
-========================== -->
-
-<section id="contact">
-
-<div class="contact-container">
-
-<h2>Contact Us</h2>
-
-<p>
-Need help with your application or have questions about our job opportunities?
-Get in touch with us using the details below.
-</p>
-
-<div class="contact-card">
-
-<h3>Email</h3>
-
-<p>eaglelinkimmigration@gmail.com</p>
-
-</div>
-
-<div class="contact-card">
-
-<h3>WhatsApp</h3>
-
-<p>+254 789 748 181</p>
-
-</div>
-
-<div class="contact-card">
-
-<h3>Office Hours</h3>
-
-<p>Monday – Friday</p>
-
-<p>8:00 AM – 5:00 PM</p>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ==========================
-        FOOTER
-========================== -->
-
-<footer>
-
-<div class="footer-container">
-
-<h2>WORLD WISE IMMIGRATION</h2>
-
-<p>Your Gateway To International Careers</p>
-
-<p>Email: eaglelinkimmigration@gmail.com</p>
-
-<p>WhatsApp: +254 789 748 181</p>
-
-<p>&copy; 2026 World Wise Immigration. All Rights Reserved.</p>
-
-</div>
-
-</footer>
-
-<script src="script.js"></script>
-
+  <header>
+    <h1>World Wise Immigration</h1>
+    <p>Your Gateway to Jobs Abroad - USA, Canada, UK, Dubai & More</p>
+  </header>
+
+  <div class="container">
+    <div class="card">
+      <h2>Apply Now</h2>
+      <p>Fill the form below. We will contact you on WhatsApp within 24 hours.</p>
+      <br>
+      
+      <!-- REPLACE THIS WITH YOUR JOTFORM IFRAME -->
+      <iframe 
+        src="YOUR_JOTFORM_LINK" 
+        width="100%" 
+        height="1700" 
+        frameborder="0" 
+        scrolling="no">
+      </iframe>
+
+      <div class="whatsapp">
+        <p>Questions? Chat us directly</p>
+        <a href="https://wa.me/254119619620" target="_blank">WhatsApp +254 119 619 620</a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    © 2026 World Wise Immigration. All applications sent to WhatsApp.
+  </footer>
 </body>
 </html>
