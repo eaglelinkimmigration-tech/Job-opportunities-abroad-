@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Prime Digital Services</title>
+
+  <meta name="description" content="Prime Digital Services - Reliable, transparent and professional digital services including websites, CVs, graphic design and social media services.">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f7fa;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0b1f3a, #1456a0);
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    header h1 {
+      font-size: 42px;
+      margin-bottom: 12px;
+    }
+
+    header p {
+      font-size: 18px;
+      margin-bottom: 25px;
+    }
+
+    .button {
+      display: inline-block;
+      background: #25D366;
+      color: white;
+      padding: 14px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 5px;
+    }
+
+    .button:hover {
+      opacity: 0.9;
+    }
+
+    .container {
+      max-width: 1050px;
+      margin: auto;
+      padding: 45px 20px;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 30px;
+      margin-bottom: 30px;
+      color: #0b1f3a;
+    }
+
+    .intro {
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto 40px;
+      font-size: 17px;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 20px;
+    }
+
+    .service-card {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    }
+
+    .service-card h3 {
+      color: #1456a0;
+      margin-bottom: 10px;
+    }
+
+    .why {
+      background: white;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .feature {
+      text-align: center;
+      padding: 20px;
+    }
+
+    .feature h3 {
+      margin: 10px 0;
+      color: #1456a0;
+    }
+
+    .request-section {
+      background: #eef3f8;
+    }
+
+    form {
+      max-width: 700px;
+      margin: auto;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+      margin: 18px 0 7px;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      padding: 13px;
+      border: 1px solid #ccc;
+      border-radius: 7px;
+      font-size: 16px;
+      font-family: inherit;
+    }
+
+    textarea {
+      min-height: 150px;
+      resize: vertical;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+      outline: none;
+      border-color: #1456a0;
+    }
+
+    .submit-button {
+      width: 100%;
+      border: none;
+      background: #25D366;
+      color: white;
+      padding: 15px;
+      font-size: 17px;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 25px;
+    }
+
+    .submit-button:hover {
+      background: #1ebe5d;
+    }
+
+    .notice {
+      text-align: center;
+      margin-top: 15px;
+      font-size: 14px;
+      color: #666;
+    }
+
+    footer {
+      background: #0b1f3a;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    footer p {
+      margin: 6px 0;
+    }
+
+    .tagline {
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 32px;
+      }
+
+      .container {
+        padding: 35px 15px;
+      }
+
+      form {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1>Prime Digital Services</h1>
+
+    <p>
+      Reliable • Transparent • Professional • Affordable
+    </p>
+
+    <p>
+      Digital solutions for businesses and individuals.
+    </p>
+
+    <a
+      class="button"
+      href="https://wa.me/254119619620"
+      target="_blank">
+      💬 Chat With Us on WhatsApp
+    </a>
+  </header>
+
+
+  <!-- INTRODUCTION -->
+  <section class="container">
+
+    <h2 class="section-title">Welcome to Prime Digital Services</h2>
+
+    <p class="intro">
+      We provide reliable and professional digital services designed
+      to help individuals and businesses build a strong online presence,
+      present themselves professionally and promote their services.
+    </p>
+
+  </section>
+
+
+  <!-- SERVICES -->
+  <section class="container">
+
+    <h2 class="section-title">Our Services</h2>
+
+    <div class="services">
+
+      <div class="service-card">
+        <h3>🌐 Website Creation</h3>
+
+        <p>
+          We create simple, modern and professional websites for
+          businesses, organizations and individuals.
+        </p>
+      </div>
+
+
+      <div class="service-card">
+        <h3>📄 CV & Resume Creation</h3>
+
+        <p>
+          We create professional and well-organized CVs and resumes
+          that clearly present your skills, education, experience
+          and qualifications.
+        </p>
+      </div>
+
+
+      <div class="
